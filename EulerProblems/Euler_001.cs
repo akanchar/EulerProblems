@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Collections;
+using static System.Console;
 /// <summary>
 /// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
 /// The sum of these multiples is 23. 
@@ -8,9 +9,18 @@ namespace EulerProblems
 {
   public class Euler_001
   {
+    const int FinalNumber = 1000, FirstFactor = 3, SecondFactor = 5;
     internal void start()
     {
-      WriteLine("Hello there");
+      ArrayList arrayList = new ArrayList();
+      int sum = 0;
+      for(int i = 1; i < FinalNumber; i++)
+        if (i % FirstFactor == 0 || i % SecondFactor == 0)
+          arrayList.Add(i);
+      foreach (int i in arrayList)
+        sum += i;
+      WriteLine("The sum of all the natural numbers below " + FinalNumber +
+        " that are multiples of " + FirstFactor + " and " + SecondFactor + " is " + sum);
     }
   }
 }
