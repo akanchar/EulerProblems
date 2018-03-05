@@ -1,7 +1,4 @@
-﻿
-using System.Threading;
-
-namespace EulerProblems
+﻿namespace EulerProblems
 {
   public class Home
   {
