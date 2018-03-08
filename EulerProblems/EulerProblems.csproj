@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Euler_001.cs" />
+    <Compile Include="Euler_002.cs" />
+    <Compile Include="Euler_003.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
